@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 121.57,
+      "left": -232.49,
+      "attrs": { "env": "micropython-20220618-v1.19.1" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 140.33,
+      "left": -50.82,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 185.6,
+      "left": -498.4,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "lcd1:SDA", "pico:GP0", "green", [ "h-62.6", "v139.16", "h-132.68", "v-195.56" ] ],
+    [ "lcd1:SCL", "pico:GP1", "gold", [ "h-52.93", "v136.57", "h-149.95", "v-197.63" ] ],
+    [ "pico:GND.8", "lcd1:GND", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "pico:VBUS", "red", [ "h-62.56", "v-47.38" ] ],
+    [ "ldr1:GND", "pico:GND.6", "black", [ "h0" ] ],
+    [ "ldr1:VCC", "pico:3V3", "red", [ "h144", "v-28.8" ] ],
+    [ "ldr1:AO", "pico:GP26", "green", [ "h67.2", "v-144.7", "h115.2", "v134.4" ] ]
+  ],
+  "dependencies": {}
+}

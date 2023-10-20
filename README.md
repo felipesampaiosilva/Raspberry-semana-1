@@ -1,3 +1,10 @@
+## Link do Texto no Drive:
+
+Texto no formato ABNT com informações mais detalhadas sobre o microcontrolador e seus principais usos.
+
+https://drive.google.com/file/d/13B7vZdPXlH3EUUF2ggCFJwspNLeWZPgy/view?usp=sharing
+
+
 ## Construção do Circuito
 
 O código é projetado para funcionar em um Raspberry Pi Pico e realiza duas tarefas:
